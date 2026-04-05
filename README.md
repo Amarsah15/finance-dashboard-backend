@@ -2,7 +2,7 @@
 
 A RESTful backend API for a multi-role finance dashboard system. Built with **Node.js**, **Express**, and **MongoDB**, it supports financial record management, role-based access control, and aggregated analytics — designed to serve data to a frontend dashboard cleanly and efficiently.
 
-> **Live API Docs:** Once running, visit `http://localhost:5000/api-docs` for the full interactive Swagger documentation.
+> **Live API:** Deployed on Railway — [https://finance-dashboard-production-amar.up.railway.app/api-docs](https://finance-dashboard-production-amar.up.railway.app/api-docs)
 
 ---
 
@@ -125,6 +125,27 @@ Swagger UI available at `http://localhost:5000/api-docs`.
 ```bash
 npm test
 ```
+
+---
+
+## Live Demo
+
+The API is deployed and publicly accessible on Railway.
+
+|                  | URL                                                                                                                                        |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Swagger UI**   | [https://finance-dashboard-production-amar.up.railway.app/api-docs](https://finance-dashboard-production-amar.up.railway.app/api-docs)     |
+| **Health Check** | [https://finance-dashboard-production-amar.up.railway.app/api/health](https://finance-dashboard-production-amar.up.railway.app/api/health) |
+
+> To test protected endpoints directly in Swagger UI — click **Authorize**, paste a JWT token from the login endpoint, and all requests will be authenticated automatically.
+
+**Quick test credentials (seeded):**
+
+| Role    | Email            | Password    |
+| ------- | ---------------- | ----------- |
+| Admin   | admin@test.com   | password123 |
+| Analyst | analyst@test.com | password123 |
+| Viewer  | viewer@test.com  | password123 |
 
 ---
 

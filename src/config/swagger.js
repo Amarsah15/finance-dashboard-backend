@@ -11,6 +11,10 @@ const options = {
     },
     servers: [
       {
+        url: "https://finance-dashboard-production-amar.up.railway.app",
+        description: "Production server (Railway)",
+      },
+      {
         url: "http://localhost:5000",
         description: "Development server",
       },
