@@ -2,7 +2,9 @@
 
 A RESTful backend API for a multi-role finance dashboard system. Built with **Node.js**, **Express**, and **MongoDB**, it supports financial record management, role-based access control, and aggregated analytics — designed to serve data to a frontend dashboard cleanly and efficiently.
 
-> **Live API:** Deployed on Railway — [https://finance-dashboard-production-amar.up.railway.app/api-docs](https://finance-dashboard-production-amar.up.railway.app/api-docs)
+> **Live API:** Deployed on Render — [https://finance-dashboard-aj19.onrender.com/api-docs](https://finance-dashboard-aj19.onrender.com/api-docs)
+>
+> **Note:** This app is hosted on Render's free tier. If the API is inactive for 15 minutes, it will spin down automatically. The first request after inactivity may take **30–60 seconds** to respond — this is expected behavior, not a bug. Subsequent requests will be fast.
 
 ---
 
@@ -130,14 +132,16 @@ npm test
 
 ## Live Demo
 
-The API is deployed and publicly accessible on Railway.
+The API is deployed and publicly accessible on Render.
 
-|                  | URL                                                                                                                                        |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Swagger UI**   | [https://finance-dashboard-production-amar.up.railway.app/api-docs](https://finance-dashboard-production-amar.up.railway.app/api-docs)     |
-| **Health Check** | [https://finance-dashboard-production-amar.up.railway.app/api/health](https://finance-dashboard-production-amar.up.railway.app/api/health) |
+|                  | URL                                                                                                              |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **Swagger UI**   | [https://finance-dashboard-aj19.onrender.com/api-docs](https://finance-dashboard-aj19.onrender.com/api-docs)     |
+| **Health Check** | [https://finance-dashboard-aj19.onrender.com/api/health](https://finance-dashboard-aj19.onrender.com/api/health) |
 
-> To test protected endpoints directly in Swagger UI — click **Authorize**, paste a JWT token from the login endpoint, and all requests will be authenticated automatically.
+> **Free tier notice:** Render spins down inactive services after 15 minutes of inactivity. The first request may take 30–60 seconds to wake the server. Once awake, all subsequent requests respond normally.
+
+> To test protected endpoints in Swagger UI — click **Authorize**, paste a JWT token from the login endpoint, and all requests will be authenticated automatically.
 
 **Quick test credentials (seeded):**
 
