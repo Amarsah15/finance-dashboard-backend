@@ -17,7 +17,7 @@ export const recordValidationSchema = z.object({
   }),
 });
 
-// 2. Auth Schemas (This ensures they are definitely exported for your test!)
+// 2. Auth Schemas
 export const registerValidationSchema = z.object({
   body: z.object({
     name: z.string({ required_error: "Name is required" }).min(2),

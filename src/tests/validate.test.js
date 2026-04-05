@@ -13,7 +13,7 @@ describe("Zod Validation Middleware", () => {
       params: {},
     };
     const res = {};
-    const next = vi.fn(); // Create a spy function
+    const next = vi.fn();
 
     // Create the specific middleware function for login
     const middleware = validate(loginValidationSchema);

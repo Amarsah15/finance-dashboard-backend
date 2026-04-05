@@ -52,7 +52,7 @@ export const getRecords = async (req, res, next) => {
         ...(query.$and || []),
         { $or: [{ category: regex }, { notes: regex }] },
       ];
-      delete query.category; // category is now inside $and, remove the top-level one
+      delete query.category; 
     }
 
     // --- PAGINATION LOGIC ---

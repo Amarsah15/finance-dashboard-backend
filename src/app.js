@@ -54,7 +54,7 @@ app.use("/api/v1/records", recordRoutes);
 app.use("/api/v1/dashboard", dashboardRoutes);
 app.use("/api/v1/users", userRoutes);
 
-// Error Handling Middlewares (Must be at the bottom!)
+// Error Handling Middlewares
 app.use(notFound); // Catches 404s
 app.use(errorHandler); // Catches everything else
 
