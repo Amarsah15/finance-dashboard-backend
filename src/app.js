@@ -41,6 +41,13 @@ app.get("/api/health", (req, res) => {
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
+app.get("/", (req, res) => {
+  res.status(200).json({
+    status: "success",
+    message: "Welcome to the Finance Tracker API!",
+  });
+}
+
 // Mount API Routes
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/records", recordRoutes);
