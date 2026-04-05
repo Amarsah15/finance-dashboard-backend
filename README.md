@@ -28,7 +28,7 @@ A RESTful backend API for a multi-role finance dashboard system. Built with **No
 finance-dashboard-backend/
 ├── src/
 │   ├── config/
-│   │   └── swagger.js              # Full OpenAPI 3.0 specification
+│   │   └── swagger.js
 │   ├── controllers/
 │   │   ├── auth.controller.js
 │   │   ├── dashboard.controller.js
@@ -405,3 +405,13 @@ The `?search=` parameter uses a case-insensitive MongoDB regex across `category`
 
 **Tests target the Express layer without a live database.**
 The unit and integration tests use Vitest and Supertest against the exported Express `app` instance, without connecting to MongoDB. This keeps the test suite fast, environment-independent, and reliable in CI. Database integration tests would be the natural next step.
+
+---
+
+## Author
+
+**Amarnath**
+Final-year B.Tech student, Computer Science & Engineering (AI & ML)
+
+- GitHub: [@Amarsah15](https://github.com/Amarsah15)
+- LinkedIn: [Amarnath Kumar](https://linkedin.com/in/Amarnath15)
