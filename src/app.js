@@ -46,7 +46,7 @@ app.get("/", (req, res) => {
     status: "success",
     message: "Welcome to the Finance Tracker API!",
   });
-}
+});
 
 // Mount API Routes
 app.use("/api/v1/auth", authRoutes);
